@@ -1,0 +1,18 @@
+def solution(L, x):
+    answer = -1
+    lower = 0
+    upper = len(L) - 1
+    
+    while lower <= upper: //비교대상이 남을때까지
+        middle = (lower + upper) // 2 //middle은 중간
+        
+        if L[middle] == x: //일치
+            answer = middle 
+            break;
+        elif L[middle] < x: //middle보다 크면
+            lower = middle + 1 //현재 middle이하보다는 크다
+            
+        elif L[middle] > x: //middle보다 작으면
+            upper = middle - 1 //현재 middle이상보다는 작다
+            
+    return answer
