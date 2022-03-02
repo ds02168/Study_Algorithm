@@ -1,0 +1,5 @@
+def solution(L, x):
+    if not x in L: //존재하지 않으면
+        return [-1]; // -1
+    else: //존재하면
+        return [i for i,y in enumerate(L) if y == x] //같은 값의 인덱스 추가

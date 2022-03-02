@@ -1,0 +1,10 @@
+def solution(L, x):
+    for i in range(len(L)):
+        if L[i] >= x: //더 큰값 발견
+            L.insert(i,x) //바로 앞에 삽입
+            return L;
+    else: //더 큰값이 없으면
+        L.append(x) //마지막에 추가
+        return L;
+            
+    return answer
