@@ -1,0 +1,5 @@
+def solution(x):
+    if x <= 1: //x가 1이면
+        return x; //종결 조건
+    else: //종결조건이 아니라면
+        return solution(x-1) + solution(x-2); //재귀적 호출

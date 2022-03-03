@@ -1,0 +1,10 @@
+def solution(L, x, l, u):
+    	if l > u: //min값이 max값보다 더 클순 없다
+        return -1 //종결 조건
+    mid = (l + u) // 2
+    if x == L[mid]: //값 일치
+        return mid //종결조건
+    elif x < L[mid]: //mid보다 작음
+        return solution(L,x,l,mid-1) //mid이상의 값은 존재할 수 없다
+    else: //mid보다 큼
+        return solution(L,x,mid+1,u) //mid이하의 값은 존재할 수 없다.
