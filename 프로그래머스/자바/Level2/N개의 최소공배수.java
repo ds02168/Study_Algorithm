@@ -26,6 +26,7 @@ class Solution {
         return a; //b기 0일때의 a가 최대공약수
     }
     
+
 	public static int lcm(int a, int b){
         return a * b / gcd(a,b); //두 수를 곱한 값에서 gcd를 나눈다.
     }
