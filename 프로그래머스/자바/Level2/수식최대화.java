@@ -2,7 +2,7 @@ package Algorithm;
 
 import java.util.ArrayList;
 
-public class MaximumArith {
+public class 수식최대화 {
 	public static ArrayList<Long> operand = new ArrayList<>();
     public static ArrayList<String> operator = new ArrayList<>();
     public static long answer = Long.MIN_VALUE;

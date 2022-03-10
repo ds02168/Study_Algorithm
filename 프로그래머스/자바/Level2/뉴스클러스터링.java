@@ -1,7 +1,7 @@
 package Algorithm;
 import java.util.*;
 
-public class NewsClustering {
+public class 뉴스클러스터링 {
 
 	public static int solution(String str1, String str2) {
         double answer = 0;
